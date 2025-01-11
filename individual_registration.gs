@@ -129,7 +129,7 @@ function llmCustomization(first, last, schoolName, interest, ) {
     q = `Your task is to act on behalf of SAILea, a nonprofit dedicated to helping students interested in artificial intelligence (AI) through AI resources such as presentations on NLP, machine learning, computer vision, etc., courses in Python, Java, and ML, speaker events, and advising. Write a personalized 3 sentence paragraph with a friendly tone to ${fullName}, commenting on their specific interest: ${interest}. Do not include a greeting. This text will be sent to the student in a welcome email to SAILea. Write three sentences in a single paragraph following these explicit instructions.`;
   }
 
-  const apiKey = "AIzaSyChDRHh-88-n27zfZBCHoVYp8VpsdcnznU"; // Please set your API key.
+  const apiKey = "GOOGLE_CLOUD_API_KEY"; 
 
   const url = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${apiKey}`;
   const payload = { contents: [{ parts: [{ text: q }] }] };
